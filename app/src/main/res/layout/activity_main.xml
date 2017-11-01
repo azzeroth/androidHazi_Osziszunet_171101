@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrazzeroth_amdpc.gondoltamegyszamra.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/hp1Img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/heart2"
+        />
+
+    <ImageView
+        android:id="@+id/hp2Img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/heart2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hp1Img"
+        android:layout_toEndOf="@+id/hp1Img" />
+
+    <ImageView
+        android:id="@+id/hp3Img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/heart2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hp2Img"
+        android:layout_toEndOf="@+id/hp2Img" />
+
+    <ImageView
+        android:id="@+id/hp4Img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/heart2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hp3Img"
+        android:layout_toEndOf="@+id/hp3Img" />
+    <ImageView
+        android:id="@+id/hp5Img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/heart2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hp4Img"
+        android:layout_toEndOf="@+id/hp4Img" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/positiveBtn"
+        android:text="+"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@+id/label1"
+        android:layout_alignLeft="@+id/negativeBtn"
+        android:layout_alignStart="@+id/negativeBtn"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/negativeBtn"
+        android:text="-"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/SzamTv"
+        android:layout_toRightOf="@+id/hp2Img"
+        android:layout_toEndOf="@+id/hp2Img" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendBtn"
+        android:text="Küldés"
+        android:textSize="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label1"
+        android:text="Találd ki a számot"
+        android:textSize="40dp"
+        android:layout_below="@+id/hp1Img"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SzamTv"
+        android:text="0"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
